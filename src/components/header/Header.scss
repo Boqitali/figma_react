@@ -1,0 +1,51 @@
+.header {
+  background: #0b0c2a;
+  padding: 20px 0;
+  height: 80px; // Normal height, siz xohlaganingizcha o'zgartirishingiz mumkin
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    img {
+      margin-right: 40px;
+      height: 40px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4a90e2;
+      }
+    }
+  }
+
+  .sign-in {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #3a78c2;
+    }
+  }
+}
