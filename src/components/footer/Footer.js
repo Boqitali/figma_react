@@ -11,16 +11,17 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { IoEarth } from "react-icons/io5";
-import robot from "../../assets/loga.svg";
+import robot from "../../assets/robot.png"; // rasm manzili
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container">
-        
+        {/* Column 1 */}
         <div className="footer-col">
-          <img src={robot} alt="AI Robot" className="robot-img" />
-          <h3>Artificial Intelligence</h3>
+          <div className="logo-row">
+            <img src={robot} alt="AI Robot" className="robot-img" />
+          </div>
           <p>
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and layouts and visual mockups.
@@ -39,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+        {/* Column 2 */}
         <div className="footer-col">
           <h4>INFORMATION</h4>
           <ul>
@@ -52,7 +53,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+        {/* Column 3 */}
         <div className="footer-col">
           <h4>FOOTER MENU</h4>
           <ul>
@@ -65,7 +66,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+        {/* Column 4 */}
         <div className="footer-col">
           <h4>USEFUL LINKS</h4>
           <ul>
@@ -78,7 +79,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+        {/* Column 5 */}
         <div className="footer-col">
           <h4>ABOUT THE STORE</h4>
           <p>
