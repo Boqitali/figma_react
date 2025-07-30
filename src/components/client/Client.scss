@@ -1,0 +1,54 @@
+.clients-say {
+  background-color: #0b0d17;
+  padding: 80px 20px;
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; // responsive uchun
+    gap: 40px;
+  }
+
+  .text-content {
+    flex: 1;
+    color: #ffffff;
+    max-width: 600px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  }
+
+  .image-content {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .text-content {
+      max-width: 100%;
+    }
+  }
+}

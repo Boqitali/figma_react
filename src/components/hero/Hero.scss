@@ -1,85 +1,92 @@
 .hero {
-  width: 100%;
-  height: 100vh;
-  background-color: #0b0e27;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 5rem;
-  gap: 5rem; // Matn va rasm orasida bo‘sh joy
+  background: #0d0f2c;
+  color: white;
+  padding: 4rem 2rem 2rem;
 
-  .content {
-    max-width: 600px;
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
 
-    .tagline {
-      color: #4a90e2;
-      font-size: 18px;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
+  &__content {
+    flex: 1;
+    min-width: 300px;
+
+    .hero__tagline {
+      color: #7b86fa;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: 60px;
-      font-weight: 800;
+      font-size: 2.8rem;
       line-height: 1.3;
-      margin-bottom: 30px;
-      color: white;
+      margin-bottom: 1rem;
+
+      span {
+        color: #7b86fa;
+      }
     }
 
-    .desc {
-      font-size: 20px;
-      color: #b0b0b0;
-      margin-bottom: 40px;
+    .hero__description {
+      color: #c4c4c4;
+      font-size: 1rem;
+      margin-bottom: 2rem;
     }
 
-    .buttons {
+    .hero__buttons {
       display: flex;
-      gap: 20px;
+      gap: 1rem;
 
-      .get-started,
-      .watch-video {
-        padding: 14px 28px;
-        font-size: 18px;
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: bold;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-      }
 
-      .get-started {
-        background: #4a90e2;
-        color: white;
-
-        &:hover {
-          background: #3a78c2;
+        &--primary {
+          background-color: #4a60ff;
+          color: white;
         }
-      }
 
-      .watch-video {
-        background: #1c1e3a;
-        color: white;
-        display: flex;
-        align-items: center;
-
-        &:hover {
-          background: #2c2f4a;
+        &--secondary {
+          background-color: #303c74;
+          color: white;
         }
       }
     }
   }
 
-  .image {
-    img {
-      width: 400px;
-      animation: float 3s ease-in-out infinite;
-    }
+  &__image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-15px);
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__logos {
+    margin-top: 3rem;
+    font-size: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    img {
+      height: 40px;
     }
   }
 }

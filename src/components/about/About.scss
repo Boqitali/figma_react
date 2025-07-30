@@ -1,0 +1,59 @@
+.brain-hero {
+  background-color: #0d0f2c;
+  color: white;
+  padding: 4rem 2rem;
+
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  &__image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 300px;
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+
+      span {
+        color: #7b86fa;
+      }
+    }
+
+    p {
+      color: #c4c4c4;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #4a60ff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

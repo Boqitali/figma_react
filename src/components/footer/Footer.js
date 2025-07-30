@@ -1,0 +1,107 @@
+import React from "react";
+import "./Footer.scss";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import { IoEarth } from "react-icons/io5";
+import robot from "../../assets/loga.svg";
+
+const Footer = () => {
+  return (
+    <footer className="footer-section">
+      <div className="container">
+        {/* Column 1 */}
+        <div className="footer-col">
+          <img src={robot} alt="AI Robot" className="robot-img" />
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and layouts and visual mockups.
+          </p>
+
+          <ul className="contact-info">
+            <li>
+              <FaEnvelope /> Company@gmail.com.com
+            </li>
+            <li>
+              <FaPhoneAlt /> (064) 332-1233
+            </li>
+            <li>
+              <FaMapMarkerAlt /> 450 Wall Street, USA, New York
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 2 */}
+        <div className="footer-col">
+          <h4>INFORMATION</h4>
+          <ul>
+            <li>New Collection</li>
+            <li>About Store</li>
+            <li>Contact Us</li>
+            <li>Latest News</li>
+            <li>Our Sitemap</li>
+            <li>Orders History</li>
+          </ul>
+        </div>
+
+        {/* Column 3 */}
+        <div className="footer-col">
+          <h4>FOOTER MENU</h4>
+          <ul>
+            <li>Instagram profile</li>
+            <li>New Collection</li>
+            <li>Contact Us</li>
+            <li>Latest News</li>
+            <li>Terms & Conditions</li>
+            <li>Purchase Theme</li>
+          </ul>
+        </div>
+
+        {/* Column 4 */}
+        <div className="footer-col">
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Instagram profile</li>
+            <li>New Collection</li>
+            <li>Contact Us</li>
+            <li>Latest News</li>
+            <li>Terms & Conditions</li>
+            <li>Purchase Theme</li>
+          </ul>
+        </div>
+
+        {/* Column 5 */}
+        <div className="footer-col">
+          <h4>ABOUT THE STORE</h4>
+          <p>
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and layouts and visual mockups.
+          </p>
+          <a href="#">www.company.com</a>
+          <div className="social-icons">
+            <FaFacebookF />
+            <FaInstagram />
+            <FaTwitter />
+            <FaLinkedinIn />
+            <FaYoutube />
+          </div>
+          <div className="language-select">
+            <IoEarth />
+            <span>English</span>
+            <span>▼</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
