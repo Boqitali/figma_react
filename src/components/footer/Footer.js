@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container">
-        {/* Column 1 */}
+        
         <div className="footer-col">
           <div className="logo-row">
             <img src={robot} alt="AI Robot" className="robot-img" />
@@ -40,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 2 */}
+        
         <div className="footer-col">
           <h4>INFORMATION</h4>
           <ul>
@@ -53,7 +53,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 3 */}
+        
         <div className="footer-col">
           <h4>FOOTER MENU</h4>
           <ul>
@@ -66,7 +66,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4 */}
+        
         <div className="footer-col">
           <h4>USEFUL LINKS</h4>
           <ul>
@@ -79,7 +79,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 5 */}
+        
         <div className="footer-col">
           <h4>ABOUT THE STORE</h4>
           <p>
