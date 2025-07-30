@@ -1,6 +1,6 @@
 import React from "react";
 import "./Client.scss";
-import illustration from "../../assets/about1.png"; // siz rasmni shu nom bilan joylang
+import illustration from "../../assets/about1.png"; 
 
 const Client = () => {
   return (

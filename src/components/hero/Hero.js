@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__wrapper">
-        {/* Chap taraf - matn qismi */}
+        
         <div className="hero__content">
           <p className="hero__tagline">NEXT GENERATION PLATFORM</p>
           <h1>
@@ -27,13 +27,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* O‘ng taraf - rasm qismi */}
+        
         <div className="hero__image">
           <img src={image} alt="Rocket Illustration" />
         </div>
       </div>
 
-      {/* Logolar butun hero qismidan pastda alohida */}
+      
       <div className="hero__logos">
         <img src={logo1} alt="Logo 1" />
         <img src={logo2} alt="Logo 2" />
